@@ -1,0 +1,9 @@
+version: '3.0'
+
+services:
+  xml2json-service:
+    build: .
+    image: xml2json-service:latest
+    container_name: xml2json-service
+    ports:
+      - "6061:6061"
