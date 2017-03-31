@@ -7,5 +7,6 @@ xml2json-server
 Usage
 ----------
     1. Make sure docker is up-and-running
-    2. To start service: docker-compose up
-    3. To stop service: docker-compose down
+    2. cd into projects root dir (if not already there)
+    3. To start service: docker-compose up
+    4. To stop service: docker-compose down
