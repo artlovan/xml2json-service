@@ -2,7 +2,7 @@ xml2json-server
 =======
 
 - Service will convert any xml structure to json and return it back.
-- Server uses goxml2json lib, so thanks to basgys/goxml2json. 
+- Server uses goxml2json lib, thanks to basgys/goxml2json. 
 
 Usage
 ----------
