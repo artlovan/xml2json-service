@@ -15,14 +15,14 @@ import (
 func handler(w http.ResponseWriter, r *http.Request)  {
 	w.Header().Set("Content-Type", "application/json")
 	body, _ := ioutil.ReadAll(r.Body)
-	jsonData, err := xml2json.Convert(strings.NewReader(string(body)))
+	json, err := xml2json.Convert(strings.NewReader(string(body)))
 
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write(jsonData.Bytes())
+	w.Write(json.Bytes())
 }
 
 func main() {
