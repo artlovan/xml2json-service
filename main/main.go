@@ -21,9 +21,8 @@ func handler(w http.ResponseWriter, r *http.Request)  {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
-	jsonBytes, _ := jsonData.ReadBytes(128)
 	w.WriteHeader(http.StatusOK)
-	w.Write(jsonBytes)
+	w.Write(jsonData.Bytes())
 }
 
 func main() {
